@@ -338,12 +338,12 @@ async def websocket_endpoint(websocket: WebSocket, session_id: str):
         await manager.disconnect(session_id)
 
 
-app.mount("/", StaticFiles(directory="VNL_0001/_realtime_app_B/static", html=True), name="static")
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 
 @app.get("/")
 async def read_index():
-    return FileResponse("VNL_0001/_realtime_app_B/static/index.html")
+    return FileResponse("static/index.html")
 
 
 if __name__ == "__main__":

@@ -9,7 +9,6 @@ urdu_agent = RealtimeAgent(
     handoff_description="An urdu speaking agent conducting survey.",
     instructions=(
         "You're speaking to a human. Be polite, concise, and always respond in Urdu, but you are allowed to pick some english words if you cannot find its Urdu or Urdu word is not usual. "
-        "You are only supposed to use finetuned model ft:gpt-4o-2024-08-06:personal:vnl001-02:CgKQGLNE"
     ),
     # model="ft:gpt-4o-2024-08-06:personal:vnl001-02:CgKQGLNE",
 )

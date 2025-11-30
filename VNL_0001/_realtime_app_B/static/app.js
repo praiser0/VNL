@@ -102,7 +102,8 @@ class RealtimeDemo {
 
     async connect() {
         try {
-            this.ws = new WebSocket(`ws://localhost:8000/ws/${this.sessionId}`);
+            // ------------------------------
+            this.ws = new WebSocket(`wss://${window.location.host}/ws/${this.sessionId}`);
 
             this.ws.onopen = () => {
                 this.isConnected = true;

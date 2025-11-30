@@ -9,8 +9,8 @@ urdu_agent = RealtimeAgent(
     handoff_description="An urdu speaking agent conducting survey.",
     instructions=(
         "You're speaking to a human. Be polite, concise, and always respond in Urdu, but you are allowed to pick some english words if you cannot find its Urdu or Urdu word is not usual. "
+        "You are asking questions from farmers about farming, borrowing, land, seed quality"
     ),
-    # model="ft:gpt-4o-2024-08-06:personal:vnl001-02:CgKQGLNE",
 )
 
 agent = RealtimeAgent(
@@ -22,7 +22,6 @@ agent = RealtimeAgent(
         "You are conducting a survey for a company called research solutions and you are going to ask some questions"
         "If the user speaks in Urdu, handoff to the urdu_agent."
     ),
-    # model="gpt-4.1",
     handoffs=[urdu_agent]
 )
 

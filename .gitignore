@@ -1,0 +1,6 @@
+VNL_Models/
+VNL_0001/livekit/node_modules/
+**/__pycache__/
+.env*
+**/KMS/
+**/.env
